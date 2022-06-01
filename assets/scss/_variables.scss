@@ -1,0 +1,58 @@
+:root {
+    // =========== Colors ============
+    --first-clr: #069c54;
+    --first-clr-alt: #048654;
+    --title-clr: #393939;
+    --text-clr: #707070;
+    --text-clr-light: #a6a6a6;
+    --body-clr: #fbfefd;
+    --container-clr: #fff;
+    --box-shadow-clr: rgba(132, 139, 200, 0.18);
+    --white-clr: #fff;
+
+    // =========== Typography ============
+    --biggest-fs: 3.6rem;
+    --h1-fs: 2.4rem;
+    --h2-fs: 2rem;
+    --h3-fs: 1.6rem;
+    --normal-fs: 1.5rem;
+    --small-fs: 1.3rem;
+    --smaller-fs: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--box-shadow-clr);
+}
+
+$header-height: 5rem;
+$border-radius: 0.8rem;
+
+// =========== Font ============
+$body-font: 'Poppins',
+sans-serif;
+
+// =========== Font Weight ============
+$font-medium: 500;
+$font-semi-bold: 600;
+
+// =========== Margenes ============
+$mb-1: 0.8rem;
+$mb-2: 1.6rem;
+$mb-3: 2.4rem;
+$mb-4: 3.2rem;
+$mb-5: 4rem;
+$mb-6: 4.8rem;
+
+// =========== Z Index ============
+$z-tooltip: 10;
+$z-fixed: 100;
+
+@media screen and (min-width: 768px) {
+    :root {
+        --biggest-fs: 6.4rem;
+        --h1-fs: 3.6rem;
+        --h2-fs: 2.4rem;
+        --h3-fs: 2rem;
+        --normal-fs: 1.6rem;
+        --small-fs: 1.4rem;
+        --smaller-fs: 1.3rem;
+    }
+}
