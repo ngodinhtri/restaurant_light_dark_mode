@@ -48,6 +48,38 @@
     }
 }
 
+.m-img {
+    width: 300px;
+    justify-self: center;
+}
+
+// ========= SCROLL TOP ==========
+.scroll-top {
+    $fs: 1.6rem;
+    $p-icon: 1rem;
+
+    display: block;
+    position: fixed;
+    right: 1rem;
+    bottom: -1 * (($p-icon * 2) + $fs);
+    z-index: $z-tooltip;
+    border-radius: $border-radius;
+    padding: 0;
+    opacity: 0.7;
+    font-size: 10px;
+    transition: 0.3s ease;
+    visibility: hidden;
+
+    i {
+        padding: $p-icon;
+    }
+
+    &.show {
+        visibility: visible;
+        bottom: 4rem;
+    }
+}
+
 // ========= HEADER ==========
 .header {
     width: 100%;
@@ -122,7 +154,7 @@
     }
 }
 
-// ========= Home ==========
+// ========= HOME ==========
 .home {
     &__data {
         margin-top: 3rem;
@@ -146,20 +178,16 @@
         font-weight: $font-semi-bold;
         color: var(--title-clr);
     }
-
-    &__img {
-        // justify-self: center;
-    }
 }
 
-// ========= about ==========
+// ========= ABOUT ==========
 .about {
     &__img {
         border-radius: $border-radius;
     }
 }
 
-// ========= Services ==========
+// ========= SERVICES ==========
 .services {
     &__icon {
         margin-bottom: $mb-2;
@@ -178,7 +206,7 @@
     }
 }
 
-// ========= Menu ==========
+// ========= MENU ==========
 .menu {
     &__container {
         grid-template-columns: repeat(2, 1fr);
@@ -226,7 +254,7 @@
     }
 }
 
-// ========= App ==========
+// ========= APP ==========
 .app {
     &__links {
         img {
@@ -236,7 +264,7 @@
     }
 }
 
-// ========= Footer ==========
+// ========= FOOTER ==========
 .footer {
     text-align: left;
 
@@ -268,8 +296,12 @@
             margin-bottom: $mb-1;
         }
 
-        li a:hover {
-            color: var(--first-clr);
+        li a {
+            color: var(--text-clr);
+
+            &:hover {
+                color: var(--first-clr);
+            }
         }
     }
 

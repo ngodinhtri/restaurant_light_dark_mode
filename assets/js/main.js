@@ -24,3 +24,16 @@ const removeMenu = () => {
 }
 
 navLinks.forEach(element => element.addEventListener('click', removeMenu));
+
+//  ------- showScrollTop -----------
+function showScrollTop() {
+    const scrollTop = document.getElementById('scroll-top');
+    // console.log(window.scrollY);
+
+    if (!scrollTop) return;
+
+    if (this.scrollY >= 560) scrollTop.classList.add('show');
+    else scrollTop.classList.remove('show');
+}
+
+window.addEventListener('scroll', showScrollTop);
