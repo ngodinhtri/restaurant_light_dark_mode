@@ -37,3 +37,36 @@ function showScrollTop() {
 }
 
 window.addEventListener('scroll', showScrollTop);
+
+//  ------- change theme -----------
+const changeTheme = () => {
+    const toggleTheme = document.getElementById('toggle-theme');
+    const iconDark = document.querySelector('#toggle-theme i[data-dark]');
+    const iconLight = document.querySelector('#toggle-theme i[data-light]');
+
+    if (!toggleTheme && iconDark && iconLight) return;
+
+    toggleTheme.addEventListener('click', () => {
+        iconLight.classList.toggle('active');
+        iconDark.classList.toggle('active');
+        document.body.classList.toggle('dark-theme');
+    })
+}
+
+changeTheme();
+
+//  ------- scroll reveal js -----------
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '20px',
+    duration: 1000,
+    reset: true
+});
+
+sr.reveal(`.home__data, .home__img,
+            .about__data, .about__img,
+            .services__item, .menu__item,
+            .app__img, .app__data,
+            contact__data, .contact__btn, .footer__item`, {
+    interval: 200
+});

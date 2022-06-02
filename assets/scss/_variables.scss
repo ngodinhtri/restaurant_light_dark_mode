@@ -45,14 +45,12 @@ $mb-6: 4.8rem;
 $z-tooltip: 10;
 $z-fixed: 100;
 
-@media screen and (min-width: 768px) {
-    :root {
-        --biggest-fs: 6.4rem;
-        --h1-fs: 3.6rem;
-        --h2-fs: 2.4rem;
-        --h3-fs: 2rem;
-        --normal-fs: 1.6rem;
-        --small-fs: 1.4rem;
-        --smaller-fs: 1.3rem;
-    }
+// =========== Dark Theme ============
+body.dark-theme {
+    --title-clr: #F1F3F2;
+    --text-clr: #C7D1CC;
+    --body-clr: #1D2521;
+    --container-clr: #27302C;
+    --box-shadow-clr: rgba(0, 0, 0, 0.18);
+    --box-shadow: 0 2rem 3rem var(--box-shadow-clr);
 }

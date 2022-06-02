@@ -204,6 +204,10 @@
         color: var(--title-clr);
         margin-bottom: $mb-1;
     }
+
+    &__list {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
 }
 
 // ========= MENU ==========
@@ -225,7 +229,6 @@
 
     &__img {
         width: 100px;
-        height: 100px;
         margin-bottom: $mb-2;
         align-self: center;
     }
@@ -267,6 +270,10 @@
 // ========= FOOTER ==========
 .footer {
     text-align: left;
+
+    &__container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
 
     &__item {}
 
@@ -311,5 +318,9 @@
 
     &__copy {
         text-align: center;
+        margin-top: $mb-2;
+        font-size: var(--smaller-fs);
     }
 }
+
+@import "media_queries"
